@@ -45,7 +45,7 @@
     <main>
         <section class="section portfolio">
             <div class="container">
-                <h1 class="portfolio-title-hidden">Портфолио</h1>
+                <h1 class="portfolio-title visually-hidden">Портфолио</h1>
                 <ul class="portfolio-filter list">
                     <li class="portfolio-filter-item"><button class="btn portfolio-filter-btn current" type="button">Все</button></li>
                     <li class="portfolio-filter-item"><button class="btn portfolio-filter-btn" type="button">Веб-сайты</button></li>
@@ -211,6 +211,21 @@
                             </svg></a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-form-container">
+                <strong class="footer-form-title">Подпишитесь на рассылку</strong>
+                <form class="footer-form" autocomplete="off" method="post" action=javascript:void(0);>
+                    <div class="footer-form-field">
+                        <input type="email" name="mail" id="mail" placeholder="E-mail" />
+                    </div>
+                    <button class="footer-form-btn btn">
+                        <span class="footer-form-btn-txt">Подписаться</span>
+                        <span><svg class="footer-form-icon" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
