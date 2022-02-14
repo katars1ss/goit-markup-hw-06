@@ -53,13 +53,12 @@ img {
     padding: 0 15px;
 
     width: 1200px;
-    /* outline: 1px solid tomato; */
 }
 .section {
     margin: 0;
     padding: 94px 0 94px 0;
 }
-a:not(.modal-check-contract){
+a:not(.modal-checkbox-contract){
     text-decoration: none;
 }
 .list {
@@ -356,6 +355,11 @@ a:not(.modal-check-contract){
     min-width: 200px;
     height: 50px;
 }
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background: #188CE8;
+}
+
 .footer-form-icon {
     display: block;
     margin-left: 10px;
@@ -409,12 +413,6 @@ a:not(.modal-check-contract){
     margin: 0 auto;
     min-width: 200px;
     height: 50px;
-
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -773,10 +771,11 @@ transform: translateY(0);
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .backdrop.is-hidden {
+
+.backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-} */
+}
 .backdrop.is-hidden .modal {
     transform: translate(-50%,-50%) scale(1.1);
 }
@@ -797,13 +796,13 @@ transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     position: absolute;
     top: 8px;
     right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 30px;
     height: 30px;
@@ -816,6 +815,11 @@ transform: translateY(0);
 
     cursor: pointer;
 }
+.modal-close-btn:hover > svg,
+.modal-close-btn:focus > svg {
+    fill: var(--accent-color);
+}
+
 .modal-icon {
     width: 18px;
     height: 18px;
@@ -838,16 +842,27 @@ transform: translateY(0);
     position: relative;
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 10px;
 }
 
 .modal-form-label {
+    display: block;
     width: 100%;
     margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
 }
 .modal-form-input {
     position: relative;
     padding: 11px 12px;
     padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 .modal-form-icon {
     position: absolute;
@@ -855,25 +870,38 @@ transform: translateY(0);
     top: 50%;
     transform: translateY(-50%);
 }
+.modal-form-input:hover,
+.modal-form-input:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+.modal-form-input:hover + svg,
+.modal-form-input:focus + svg {
+    fill: var(--accent-color);
+}
+
 
 .modal-form-textarea {
     resize: none;
     width: 100%;
     height: 120px;
     margin-bottom: 21px;
+    padding: 15px;
 }
 
 .modal-form-checkbox {
     position: relative;
+    display: flex;
+    align-items: center;
+    
     width: 100%;
-    height: auto;
-
     margin-bottom: 30px;
 }
 
 .modal-checkbox-label {
     display: flex;
     align-items: center;
+    padding-left: 35px;
 }
 .modal-form-checkbox .modal-check-icon {
     position: absolute;
@@ -881,16 +909,43 @@ transform: translateY(0);
 
     border: 2px solid var(--title-text-color);
 }
-.modal-checkbox-text {
-    margin-left: 36px;
-}
-.modal-checkbox-label:checked {
 
+.modal-form-checkbox {
+    cursor: pointer;
+}
+.modal-checkbox-input:checked + .modal-check-icon {
+    background-color: var(--accent-color);
+    border-color: transparent;
+    border-radius: 2px;
+}
+.modal-checkbox-input:hover + .modal-check-icon,
+.modal-checkbox-input:focus + .modal-check-icon {
+    border-color: var(--accent-color);
 }
 .modal-checkbox-contract {
     display: block;
     margin-left: 7px;
 }
+.modal-checkbox-contract:hover,
+.modal-checkbox-contract:focus {
+    color: var(--accent-color);
+}
+
+.modal-form-btn {
+    display:block;
+    margin: 0 auto;
+    min-width: 200px;
+    height: 50px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+    background: #188CE8;
+}
+
 
 
 
