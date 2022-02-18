@@ -242,12 +242,12 @@ a:not(.checkbox__contract){
     align-items: baseline;
 }
 
-.footer-logo {
+.footer__logo {
     display: inline-block;
     padding: 0;
     margin-bottom: 20px;
 }
-.footer-logo--deco {
+.footer__logo--deco {
     color: var(--white-text-color);
 }
 
@@ -271,14 +271,21 @@ a:not(.checkbox__contract){
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-button {
-    margin-left: 12px;
+.footer-networks {
+    margin-left: 70px;
 }
-.footer-button__icon {
-    display: block;
-    margin-left: 10px;
-}
+.footer-networks__title {
+    display: inline-block;
+    margin-bottom: 20px;
 
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
+.footer-networks__icon {
+    fill: currentColor;
+}
 
 /* ---------------Footer form------------------ */
 .footer-form__container {
@@ -323,6 +330,13 @@ a:not(.checkbox__contract){
 .footer-form__input:focus::placeholder {
     color: var(--white-text-color);
 }
+.footer-btn {
+    margin-left: 12px;
+}
+.footer-btn__icon {
+    display: block;
+    margin-left: 10px;
+}
 
 
 /* ---------------networcs__list------------------ */
@@ -356,35 +370,6 @@ a:not(.checkbox__contract){
 .networcs__link:focus {
     background-color: var(--accent-color);
 }
-
-.team-networcs__link {
-       color: #afb1b8;
-}
-.team-networcs__icon {
-    fill: currentColor;
-}
-
-.team-networcs__link:hover,
-.team-networcs__link:focus {
-    color: var(--white-text-color);
-}
-
-.footer-networks {
-    margin-left: 70px;
-}
-.footer-networks__title {
-    display: inline-block;
-    margin-bottom: 20px;
-
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-text-color);
-}
-.footer-networks__icon {
-    fill: currentColor;
-}
-
 
 /* -----------------Студия-------------- */
 
@@ -429,7 +414,7 @@ a:not(.checkbox__contract){
     color: var(--white-text-color);
     text-transform: uppercase;
 }
-.hero-btn {
+.hero__btn {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -578,6 +563,17 @@ a:not(.checkbox__contract){
     letter-spacing: 0.03em;
 
     text-align: center;
+}
+.team-networcs__link {
+       color: #afb1b8;
+}
+.team-networcs__icon {
+    fill: currentColor;
+}
+
+.team-networcs__link:hover,
+.team-networcs__link:focus {
+    color: var(--white-text-color);
 }
 
 
