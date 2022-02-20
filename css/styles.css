@@ -68,16 +68,16 @@ a:not(.checkbox__contract){
 }
 
 .visually-hidden {
-  team__position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 
@@ -158,7 +158,7 @@ a:not(.checkbox__contract){
     margin-left: 50px;
 }
 .nav__link {
-    team__position: relative;
+    position: relative;
     display: block;
     padding: 32px 0;
 
@@ -179,7 +179,7 @@ a:not(.checkbox__contract){
     color :var(--accent-color);
 }
 .nav__link.active::after {
-    team__position: absolute;
+    position: absolute;
     bottom: -1px;
     left: 0;
     content: "";
@@ -383,7 +383,7 @@ a:not(.checkbox__contract){
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_bg.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
-    background-team__position: center;
+    background-position: center;
 }
 
 .hero__bg {
@@ -395,7 +395,7 @@ a:not(.checkbox__contract){
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_bg.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
-    background-team__position: center;
+    background-position: center;
 }
 .hero__title {
     display:block;
@@ -479,12 +479,12 @@ a:not(.checkbox__contract){
     margin-left: calc(-1 * var(--card-set-gap));
 }
 .about__item {
-    team__position: relative;
+    position: relative;
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
 }
 .about__text {
-    team__position: absolute;
+    position: absolute;
     left: 0;
     bottom: 0;
 
@@ -551,7 +551,7 @@ a:not(.checkbox__contract){
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
-.team__position {
+.team__incumbency {
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
@@ -560,7 +560,7 @@ a:not(.checkbox__contract){
     text-align: center;
 }
 .team-networcs__link {
-       color: #afb1b8;
+    color: #afb1b8;
 }
 .team-networcs__icon {
     fill: currentColor;
@@ -620,7 +620,7 @@ a:not(.checkbox__contract){
     padding-top:94px;
 }
 
-.portfolio-portfolio-filter {
+.portfolio-filter {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -641,14 +641,14 @@ a:not(.checkbox__contract){
     color: var(--title-text-color);
     background-color: var(--secondary-bg-color);
 
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current,
 .portfolio-filter__btn:hover,
 .portfolio-filter__btn:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
-    portfolio-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
@@ -676,14 +676,14 @@ a:not(.checkbox__contract){
 .portfolio-card__link:focus .portfolio-card__overlay {
 transform: translateY(0);
 }
- .portfolio-card__item {
-    background-color: var(--primery-bg-color);
- }
+.portfolio-card__item {
+background-color: var(--primery-bg-color);
+}
 
- .portfolio-card__thumb {
-     team__position: relative;
-     overflow: hidden;
- }
+.portfolio-card__thumb {
+    position: relative;
+    overflow: hidden;
+}
 
 .portfolio-card__img {
     display: block;
@@ -691,7 +691,7 @@ transform: translateY(0);
     height: auto;
 }
 .portfolio-card__overlay {
-    team__position: absolute;
+    position: absolute;
     left: 0;
     top: 0;
 
@@ -733,7 +733,7 @@ transform: translateY(0);
 
 /* -------------Modal window------------- */
 .backdrop {
-    team__position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -752,7 +752,7 @@ transform: translateY(0);
     transform: translate(-50%,-50%) scale(1.1);
 }
 .modal {
-    team__position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -768,7 +768,7 @@ transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn--close {
-    team__position: absolute;
+    position: absolute;
     top: 8px;
     right: 8px;
 
@@ -814,7 +814,7 @@ transform: translateY(0);
 }
 
 .form__field {
-    team__position: relative;
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -832,7 +832,7 @@ transform: translateY(0);
     color: #757575;
 }
 .form__input {
-    team__position: relative;
+    position: relative;
     padding: 11px 12px;
     padding-left: 42px;
 
@@ -842,7 +842,7 @@ transform: translateY(0);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__icon {
-    team__position: absolute;
+    position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
@@ -869,7 +869,7 @@ transform: translateY(0);
 }
 
 .form__checkbox {
-    team__position: relative;
+    position: relative;
     display: flex;
     align-items: center;
     
@@ -883,7 +883,7 @@ transform: translateY(0);
     padding-left: 35px;
 }
 .checkbox__icon {
-    team__position: absolute;
+    position: absolute;
     left: 12px;
 
     border: 2px solid var(--title-text-color);
